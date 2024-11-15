@@ -30,3 +30,7 @@ async def estado_LED(request: Request):
 @app.get('/led')
 def obtener_estado_LED():
     return led_status
+
+@app.get('/')
+def obtener_estado_LED():
+    return 'funciona correctamente!!'
